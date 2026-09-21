@@ -1,0 +1,225 @@
+ /* Variaveis Globais (Cores e Fontes reutilizaveis no CSS)*/
+        :root {
+                --color-primary: #4F46E5; /* Cor principal - (separar se a cor for composta: -) */
+                --color-primary-dark: #4329CA; /* versão escura */
+                --color-text: #1E1B2E; /* Cor do texto principal  */
+                --color-text-light: #6B7280; /* Cor do texto secundário  */
+                --color-border: #E5E7EB; /* Cor da Borda  */
+                --color-bg: #FFF; /* Cor de fundo */
+                --fonte-main: 'Inter', sans-serif; /* fonte */
+        }
+
+        /* Reset básico: Remove Espaçamentos padrão do navegador */
+        * {
+                margin: 0; /* Espaçamento externo */
+                padding: 0; /* Espaçamento interno */
+                box-sizing: border-box; /* padding e border não aumentam o tamanho do elemento */
+        }
+
+        body {
+                font-family: var(--fonte-main); /* Fonte do Projeto */
+        }
+
+        .header {
+                width: 100%;
+                background-color: var(--color-bg);
+                border-bottom: 1px solid var(--color-border);
+                /* Borda inferior */
+                position: sticky; /* header "gruda" no topo ao rolar a tela */
+                top: 0%;  /**/
+                z-index: 100; /* garante que fique acima de outros elementos */
+        }
+
+        .header-container {
+                max-width: 1200px; /* Largura Maxima do conteúdo */
+                margin: 0 auto; /* Centraliza a página*/
+                padding: 16px 24px;
+                display: flex; /* Organiza os elementos em linha */
+                align-items: center; /* Centraliza verticalmente */
+                justify-content: space-between; /* Logo, menu e botoes ficam nas pontas */
+                gap: 24px; /* Espaço entre elementos */
+        }
+
+        /* LOGO */
+        .logo{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                text-decoration: none; /* Retira sublinhado */
+        }
+
+        .logo img {
+                width: 40px;
+                object-fit: contain; /* Mantem a proporção da imagem */
+        }
+
+        .Logo-text {
+                display: flex;
+                flex-direction: column; /* Titulo em cima, subtitulo em baixo */
+        }
+
+        .logo-title {
+                font-size: 16px;
+                font-weight: 700; /* negrito */
+                color: var(--color-text);
+        }
+
+        .logo-subtitle {
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--color-text-light);
+        }
+
+        /* Variaveis Globais (Cores e Fontes reutilizaveis no CSS)*/
+        :root {
+                --color-primary: #4F46E5; /* Cor principal - (separar se a cor for composta: -) */
+                --color-primary-dark: #4329CA; /* versão escura */
+                --color-text: #1E1B2E; /* Cor do texto principal  */
+                --color-text-light: #6B7280; /* Cor do texto secundário  */
+                --color-border: #E5E7EB; /* Cor da Borda  */
+                --color-bg: #FFF; /* Cor de fundo */
+                --fonte-main: 'Inter', sans-serif; /* fonte */
+        }
+
+        /* Reset básico: Remove Espaçamentos padrão do navegador */
+        * {
+                margin: 0; /* Espaçamento externo */
+                padding: 0; /* Espaçamento interno */
+                box-sizing: border-box; /* padding e border não aumentam o tamanho do elemento */
+        }
+
+        body {
+                font-family: var(--fonte-main); /* Fonte do Projeto */
+        }
+
+        .header {
+                width: 100%;
+                background-color: var(--color-bg);
+                border-bottom: 1px solid var(--color-border);
+                /* Borda inferior */
+                position: sticky; /* header "gruda" no topo ao rolar a tela */
+                top: 0%;  /**/
+                z-index: 100; /* garante que fique acima de outros elementos */
+        }
+
+        .header-container {
+                max-width: 1200px; /* Largura Maxima do conteúdo */
+                margin: 0 auto; /* Centraliza a página*/
+                padding: 16px 24px;
+                display: flex; /* Organiza os elementos em linha */
+                align-items: center; /* Centraliza verticalmente */
+                justify-content: space-between; /* Logo, menu e botoes ficam nas pontas */
+                gap: 24px; /* Espaço entre elementos */
+        }
+
+        /* LOGO */
+        .logo{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                text-decoration: none; /* Retira sublinhado */
+        }
+
+        .logo img {
+                width: 40px;
+                object-fit: contain; /* Mantem a proporção da imagem */
+        }
+
+        .Logo-text {
+                display: flex;
+                flex-direction: column; /* Titulo em cima, subtitulo em baixo */
+        }
+
+        .logo-title {
+                font-size: 16px;
+                font-weight: 700; /* negrito */
+                color: var(--color-text);
+        }
+
+        .logo-subtitle {
+                font-size: 12px;
+                font-weight: 400;
+                color: var(--color-text-light);
+        }
+
+        /* NAVEGAÇÃO - MENU */
+        .main-nav{
+                display: flex;
+                align-items: center; /* Centraliza os links verticalmente */
+                gap: 32px; /* Espaço entre os links */
+        }
+
+        .nav-link {
+                text-decoration: none; /* Remove a estilização padrão dos links */
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--color-text);
+                transition: color 0.2s ease; /* Quando passar o mouse em cima, ele muda de cor lentamente */
+        }
+
+        .nav-link:hover {
+                color: var(--color-primary-dark); /* Muda a cor ao passar o mouse, só que fortão */
+        }
+
+        .nav-link.active {
+                color: var(--color-primary); /* Destaca o link ds página atual */
+                font-weight: 600;
+
+        }
+
+        /* Ações header (buscar + botões */
+        .header-actions {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+        }
+
+        .search-box {
+                position: relative; /* Serve para posicionar o icone da lupa */
+                display: flex;
+                align-items: center;
+        }
+
+        .search-box input {
+                font-family: var(--fonte-main);
+                width: 220px;
+                padding: 10px 40px 10px 40px; /* Espaço extra a direita para caber o icone de pesquisa */
+                border: 1px solid var(--color-border);
+                border-radius: 8px; /* Para deixar as bordas arredondadas */
+                font-size: 14px;
+                outline: none; /* Remove a borda azul padrão do navegador */
+        }
+
+        .search-box input:focus {
+                border-color: var(--color-primary-dark); /* Cor da borda de pesquisa */
+        }
+
+        .search-box input::placeholder {
+                color: var(--color-text-light); /* Nome de dentro do buscar */
+        }
+
+        /* tem que adicionar o seach dentro do index */
+        .search-icon {
+                position: absolute; /* Posiciona o icone sobre o input */
+                right: 14px;
+                fill: var(--color-primary-dark); /* Cor do icone da lupa */
+                pointer-events: none; /* Impede o icone de atrapalhar o clique no input */ 
+        }
+
+        .btn-primary {
+                font-family: var(--fonte-main);
+                background-color: var(--color-primary);
+                color: #FFF;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer; /* Mostra o que é clicavel */
+                white-space: nowrap; /* Impede o texto de quebrar a linha */
+        }
+
+        .btn-primary:hover {
+                background-color: var(--color-primary-dark);
+        }
+
